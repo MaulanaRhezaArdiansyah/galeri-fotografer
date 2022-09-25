@@ -1,0 +1,93 @@
+body {
+  background-image: url(img/full-tenan.jpg);
+  background-size: cover;
+  /* background-position: center; */
+  /* background-color: rgb(27, 27, 27); */
+  /* height: 3000px; */
+}
+
+#hero {
+  /* background-image: url(img/hero-3.jpg); */
+  /* background-repeat: no-repeat; */
+  color: white;
+}
+
+#hero h1 {
+  font-size: 6rem;
+  margin-top: 7rem;
+  text-shadow: 2px 2px 10px #000;
+}
+
+#hero p {
+  font-size: 3rem;
+  margin-bottom: 7rem;
+  text-shadow: 2px 2px 10px #000;
+}
+
+#galeri {
+  /* background-color: rgb(27, 27, 27); */
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.gallery-img:hover {
+  transform: scale(0.95);
+}
+
+.overlay {
+  position: fixed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 99;
+  transition: 0.5s;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay .close {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: 80px;
+  left: 69%;
+  margin-left: -45px;
+  opacity: 1;
+}
+
+.overlay img {
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+  animation: zoomAndFade 1s;
+}
+
+@keyframes zoomAndFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
