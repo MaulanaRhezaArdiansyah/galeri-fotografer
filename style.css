@@ -4,7 +4,7 @@ body {
 
 #hero {
   background-image: url(img/full-mountain.jpg);
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   background-attachment: fixed;
   color: rgb(255, 255, 255);
