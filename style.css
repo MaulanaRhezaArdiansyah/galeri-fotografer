@@ -4,7 +4,9 @@ body {
 
 #hero {
   background-image: url(img/full-mountain.jpg);
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   box-shadow: 0 2px 8px rgb(80, 80, 80);
 }
